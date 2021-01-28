@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     // Sami Kaski 26.1.2021
     public float jumpPower = 10.0f;
     Rigidbody2D myRigidbody;
-    public bool isGrounded = false;
+    bool isGrounded = false;
     void Start()
     {
         myRigidbody = transform.GetComponent<Rigidbody2D>();
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && isGrounded )
         {
             myRigidbody.AddForce(Vector3.up * (jumpPower * myRigidbody.gravityScale * 20.0f));
         }

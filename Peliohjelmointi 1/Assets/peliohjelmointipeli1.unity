@@ -174,7 +174,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.9997253
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 1206636767}
   - component: {fileID: 1206636766}
   - component: {fileID: 1206636770}
+  - component: {fileID: 1206636771}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -347,8 +348,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5651f2b4c494af8409d97a7fbbff5c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 5
-  isGrounded: 0
+  jumpPower: 5.5
+--- !u!95 &1206636771
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206636765}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ff03a05c4656994a9e1515e8631c26e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1453828459
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +381,7 @@ GameObject:
   - component: {fileID: 1453828460}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,8 +470,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453828459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -2.23, z: 0}
-  m_LocalScale: {x: 25.914932, y: 0.7731569, z: 1}
+  m_LocalPosition: {x: 0.544, y: -2.23, z: 0}
+  m_LocalScale: {x: 35.762627, y: 0.7731569, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
