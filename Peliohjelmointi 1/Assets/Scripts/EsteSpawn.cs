@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// Start is called before the first frame update
+// Sami Kaski
 public class EsteSpawn : MonoBehaviour
 {
     public float scrollSpeed = 5.0f;
-
     
+
+
+
     void Start()
     {
         
@@ -15,6 +17,8 @@ public class EsteSpawn : MonoBehaviour
     
     void Update()
     {
+        
+        
         GameObject currentChild;
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -29,4 +33,8 @@ public class EsteSpawn : MonoBehaviour
     {
         currentChallenge.transform.position -= Vector3.right * (scrollSpeed * Time.deltaTime);
     }
+
+     
+
+   
 }
